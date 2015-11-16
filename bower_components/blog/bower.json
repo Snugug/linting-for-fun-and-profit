@@ -15,7 +15,10 @@
     ".yo-rc.json",
     ".nvmrc",
     ".gitignore",
-    ".git"
+    ".git",
+    "circle.yml",
+    "bower.json",
+    "pages/**/*.html"
   ],
   "dependencies": {
     "prism": "~1.0.0"
