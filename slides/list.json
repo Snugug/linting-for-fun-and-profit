@@ -1,0 +1,121 @@
+[
+    {
+        "filename": "index.md",
+        "attr": {
+            "data-state": "title"
+        }
+    },
+    [
+        {
+            "filename": "tripple-1/linting.html",
+            "attr": {
+                "data-state": "linting-1",
+                "data-transition-speed": "fast",
+                "data-transition": "slide"
+            }
+        },
+        {
+            "filename": "tripple-1/fun.html",
+            "attr": {
+                "data-state": "fun-1",
+                "data-transition-speed": "fast",
+                "data-transition": "slide"
+            }
+        },
+        {
+            "filename": "tripple-1/profit.html",
+            "attr": {
+                "data-state": "profit-1",
+                "data-transition-speed": "fast",
+                "data-transition": "slide"
+            }
+        }
+    ],
+    [
+        "so-what-s-linting.html",
+        "linting-definition.html",
+        "bugs-and-styles.html"
+    ],
+    {
+        "filename": "talk.html",
+        "attr": {
+            "data-state": "talk"
+        }
+    },
+    "ast.html",
+    {
+        "filename": "fractal-tree.html",
+        "attr": {
+            "data-state": "ast"
+        }
+    },
+    [
+        "static-analysis.html",
+        "unstructured-text.html"
+    ],
+    {
+        "filename": "woah.html",
+        "attr": {
+            "data-state": "woah"
+        }
+    },
+    [
+        "ast-breakdown.html",
+        "structured-object.html"
+    ],
+    {
+        "filename": "eye-opening.html",
+        "attr": {
+            "data-state": "eye-opening"
+        }
+    },
+    [
+        "useful-asts.html",
+        "what-asts-can-do.html"
+    ],
+    {
+        "filename": "asts-give-you-superpowers.html",
+        "attr": {
+            "data-state": "superpowers"
+        }
+    },
+    [
+        "asts-for-linting.html",
+        "steps-to-linting.html",
+        "configure-your-linter.html"
+    ],
+    [
+        {
+            "filename": "linters-in-practice.html",
+            "attr": {
+                "data-state": "veggies"
+            }
+        },
+        "configuration.html",
+        "invisibles-and-indentation.html",
+        "mixins-before-declarations.html"
+    ],
+    {
+        "filename": "your-turn.html",
+        "attr": {
+            "data-state": "your-turn"
+        }
+    },
+    [
+        "cli-sass-lint.html",
+        "grunt-sass-lint.html",
+        "gulp-sass-lint.html"
+    ],
+    {
+        "filename": "exploding-with-power.html",
+        "attr": {
+            "data-state": "rainbows"
+        }
+    },
+    [
+        "lint-all-the-things.html",
+        "eslint.html",
+        "htmllint.html"
+    ]
+
+]

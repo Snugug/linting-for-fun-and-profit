@@ -1,0 +1,18 @@
+<p><strong>mixins before declarations</strong> - Don't Write</p>
+
+
+<pre class="half" data-line="8-9" data-start="1"><code class="language-scss">@mixin awesome($color) {
+  color: mix(black, $color);
+  background: $color;
+}
+
+#baz {
+  color: white;
+  @include awesome(red);
+}</code></pre>
+
+<pre class="half fragment" data-line="3-4" data-start="1"><code class="language-scss">#baz {
+  color: white;
+  color: maroon;
+  background: red;
+}</code></pre>

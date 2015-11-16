@@ -1,0 +1,15 @@
+<h3>Sass Lint - Gulp</h3>
+
+<pre><code class="language-bash">npm install gulp-sass-lint --save-dev</code></pre>
+
+<pre class="fragment"><code class="language-javascript">'use strict';
+
+var gulp = require('gulp'),
+    sassLint = require('gulp-sass-lint');
+
+gulp.task('default', function () {
+  return gulp.src('sass/**/*.s+(a|c)ss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});</code></pre>

@@ -1,0 +1,80 @@
+.posts {
+  & + & {
+    margin-top: 3rem;
+  }
+
+  &--listing {
+    list-style: none;
+
+    & + & {
+      @include double-rhythm;
+    }
+  }
+
+  @supports (columns: 2) {
+    &--ARCHIVE {
+      @include breakpoint(672px) {
+        .posts--list {
+          columns: 2;
+          column-gap: 2rem;
+        }
+
+        .posts--listing {
+          break-inside: avoid;
+
+          &:first-of-type {
+            margin-top: 0;
+          }
+        }
+      }
+
+    }
+  }
+
+  &--heading {
+    @extend .base--h2;
+    margin-bottom: 2rem;
+  }
+
+  &:nth-of-type(2),
+  &--ARCHIVE {
+    @include double-rhythm;
+  }
+}
+
+.post {
+  position: relative;
+
+  &--title {
+    font-size: ms(0);
+    font-weight: bold;
+    line-height: 1;
+
+    .posts--LATEST & {
+      font-size: ms(1);
+    }
+  }
+
+  &--author {
+    font-size: .75em;
+    line-height: 1;
+    margin-top: .5rem;
+    font-style: italic;
+    color: mix($color, $background, 65%);
+    // @extend .article--author;
+  }
+
+  &--summary {
+    @extend .base;
+    font-size: .8em;
+    @include half-rhythm;
+  }
+
+  &--published {
+    display: block;
+    & + & {
+      @include half-rhythm;
+    }
+    // @extend .article--published;
+  }
+}

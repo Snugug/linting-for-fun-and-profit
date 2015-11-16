@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Linting for Fun and Profit</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/prism/plugins/line-highlight/prism-line-highlight.css">
+
+        <!-- Theme -->
+        <link rel="stylesheet" href="css/theme.css" id="theme">
+        <link rel="stylesheet" href="http://snugug.com/css/style.css">
+
+
+
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'bower_components/reveal.js/css/print/pdf.css' : 'bower_components/reveal.js/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <script>
+            (function () {
+              'use strict';
+
+              var fontURL = 'http://snugug.github.io/blog/css/fonts.css',
+                  fonts,
+                  req,
+                  style,
+                  fontUrlLS;
+
+              window.domCL = false;
+
+              window.addEventListener('DOMContentLoaded', function () {
+                window.domCL = true;
+              });
+
+              if (window.localStorage && document.querySelector && window.XMLHttpRequest) {
+                fonts = localStorage.getItem('fonts');
+                fontUrlLS = localStorage.getItem('fontURL');
+
+                if (fonts && fontUrlLS === fontURL) {
+                  req = document.querySelector('link[rel="stylesheet"]');
+
+                  style = window.document.createElement('style');
+                  style.innerHTML = fonts;
+
+                  req.parentNode.insertBefore(style, req.nextSibling);
+                }
+                else {
+                  window.addEventListener('load', function () {
+                    req = new XMLHttpRequest();
+                    req.open('GET', fontURL);
+                    req.onreadystatechange = function () {
+                      localStorage.setItem('fonts', req.responseText);
+                      localStorage.setItem('fontURL', fontURL);
+                    }
+                    req.send();
+                  });
+                }
+              }
+            })();
+          </script>
+
+        <!--[if lt IE 9]>
+        <script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                
+                    
+                        
+    <section data-state="title" data-markdown="slides/index.md"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-state="linting-1" data-transition-speed="fast" data-transition="slide" data-html="slides/tripple-1/linting.html"></section>
+
+
+                            
+                                
+    <section data-state="fun-1" data-transition-speed="fast" data-transition="slide" data-html="slides/tripple-1/fun.html"></section>
+
+
+                            
+                                
+    <section data-state="profit-1" data-transition-speed="fast" data-transition="slide" data-html="slides/tripple-1/profit.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-html="slides/so-what-s-linting.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/linting-definition.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/bugs-and-styles.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                        
+    <section data-state="talk" data-html="slides/talk.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/ast.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-state="ast" data-html="slides/fractal-tree.html"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-html="slides/static-analysis.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/unstructured-text.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                        
+    <section data-state="woah" data-html="slides/woah.html"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-html="slides/ast-breakdown.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/structured-object.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                        
+    <section data-state="eye-opening" data-html="slides/eye-opening.html"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-html="slides/useful-asts.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/what-asts-can-do.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                        
+    <section data-state="superpowers" data-html="slides/asts-give-you-superpowers.html"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-html="slides/asts-for-linting.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/steps-to-linting.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/configure-your-linter.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-state="veggies" data-html="slides/linters-in-practice.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/configuration.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/invisibles-and-indentation.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/mixins-before-declarations.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                        
+    <section data-state="your-turn" data-html="slides/your-turn.html"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-html="slides/cli-sass-lint.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/grunt-sass-lint.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/gulp-sass-lint.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                        
+    <section data-state="rainbows" data-html="slides/exploding-with-power.html"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-html="slides/lint-all-the-things.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/eslint.html"></section>
+
+
+                            
+                                
+    <section data-html="slides/htmllint.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+            </div>
+
+        </div>
+
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.js"></script>
+        <script>
+
+          // Full list of configuration options available at:
+          // https://github.com/hakimel/reveal.js#configuration
+          Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+              { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'bower_components/prism/prism.js' },
+                    // { src: 'bower_components/prism/plugins/line-numbers/prism-line-numbers.js'},
+                    { src: 'bower_components/prism/plugins/line-highlight/prism-line-highlight.min.js'},
+                    { src: 'bower_components/prism/components/prism-scss.min.js' },
+                    { src: 'bower_components/prism/components/prism-markup.min.js' },
+                    { src: 'bower_components/prism/components/prism-bash.min.js' },
+                    { src: 'bower_components/prism/components/prism-yaml.min.js' },
+                    { src: 'bower_components/prism/components/prism-javascript.min.js', callback: function() {
+                        Prism.highlightAll(function () {
+                            console.log('Helo World');
+                        });
+                    }},
+              { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true },
+              { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+            ]
+          });
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "letterform-shades",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Snugug/letterform-shades",
+  "authors": [
+    "Sam Richard <snugug@gmail.com>"
+  ],
+  "description": "Letterform Shades in Sass, from http://practice.typekit.com/lesson/using-shades/",
+  "main": "sass/_letterform-shades.scss",
+  "keywords": [
+    "sass",
+    "typekit",
+    "letterform",
+    "shades",
+    "shadow"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gemfile",
+    "Gemfile.lock",
+    "sache.json",
+    "lib",
+    "letterform-shades.gemspec"
+  ]
+}
