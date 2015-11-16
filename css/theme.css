@@ -275,10 +275,10 @@ body {
   box-shadow: none;
   background: inherit; }
 
-.linting-1 .reveal section > *, .fun-1 .reveal section > *, .profit-1 .reveal section > *, .talk .reveal section > *, .ast .reveal section > *, .woah .reveal section > *, .eye-opening .reveal section > *, .superpowers .reveal section > *, .veggies .reveal section > *, .your-turn .reveal section > * {
+.linting-1 .reveal section > *, .fun-1 .reveal section > *, .profit-1 .reveal section > *, .talk .reveal section > *, .ast .reveal section > *, .woah .reveal section > *, .eye-opening .reveal section > *, .superpowers .reveal section > *, .veggies .reveal section > *, .your-turn .reveal section > *, .rainbows .reveal section > * {
   color: transparent; }
 
-.linting-1 .slide-background, .fun-1 .slide-background, .profit-1 .slide-background, .talk .slide-background, .ast .slide-background, .woah .slide-background, .eye-opening .slide-background, .superpowers .slide-background, .your-turn .slide-background {
+.linting-1 .slide-background, .fun-1 .slide-background, .profit-1 .slide-background, .talk .slide-background, .ast .slide-background, .woah .slide-background, .eye-opening .slide-background, .superpowers .slide-background, .your-turn .slide-background, .rainbows .slide-background {
   background-size: cover !important;
   background-repeat: no-repeat !important; }
 
@@ -289,6 +289,8 @@ body {
   background-color: black; }
 
 .slide-background {
+  @at-root { }
+
   @at-root { }
 
   @at-root { }
@@ -329,6 +331,8 @@ body {
     background-image: url('../resources/images/veggies.gif'); }
   .your-turn .slide-background {
     background-image: url('../resources/images/integrate.gif'); }
+  .rainbows .slide-background {
+    background-image: url('../resources/images/rainbows.gif'); }
   .title .slide-background {
     background-color: #c20030;
     background: linear-gradient(0deg, rgba(194, 0, 48, 0) 10%, rgba(194, 0, 48, 0.05) 10%, rgba(194, 0, 48, 0.05) 20%, rgba(194, 0, 48, 0.1) 20%, rgba(194, 0, 48, 0.1) 30%, rgba(194, 0, 48, 0.15) 30%, rgba(194, 0, 48, 0.15) 40%, rgba(194, 0, 48, 0.2) 40%, rgba(194, 0, 48, 0.2) 50%, rgba(194, 0, 48, 0.3) 50%, rgba(194, 0, 48, 0.3) 60%, rgba(194, 0, 48, 0.4) 60%, rgba(194, 0, 48, 0.4) 70%, rgba(194, 0, 48, 0.5) 70%, rgba(194, 0, 48, 0.5) 80%, rgba(194, 0, 48, 0.6) 80%, rgba(194, 0, 48, 0.6) 90%, rgba(194, 0, 48, 0.8) 90%), linear-gradient(-90deg, rgba(194, 0, 48, 0) 10%, rgba(194, 0, 48, 0.05) 10%, rgba(194, 0, 48, 0.05) 20%, rgba(194, 0, 48, 0.1) 20%, rgba(194, 0, 48, 0.1) 30%, rgba(194, 0, 48, 0.15) 30%, rgba(194, 0, 48, 0.15) 40%, rgba(194, 0, 48, 0.2) 40%, rgba(194, 0, 48, 0.2) 50%, rgba(194, 0, 48, 0.3) 50%, rgba(194, 0, 48, 0.3) 60%, rgba(194, 0, 48, 0.4) 60%, rgba(194, 0, 48, 0.4) 70%, rgba(194, 0, 48, 0.5) 70%, rgba(194, 0, 48, 0.5) 80%, rgba(194, 0, 48, 0.6) 80%, rgba(194, 0, 48, 0.6) 90%, rgba(194, 0, 48, 0.8) 90%), #da9400; }

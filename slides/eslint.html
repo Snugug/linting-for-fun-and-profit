@@ -1,0 +1,15 @@
+<h3><a href="http://eslint.org/">ESLint</a> - Gulp</h3>
+
+<pre><code class="language-bash">npm install gulp-eslint --save-dev</code></pre>
+
+<pre class="fragment"><code class="language-javascript">'use strict';
+
+var gulp = require('gulp'),
+    eslint = require('gulp-eslint');
+
+gulp.task('default', function () {
+  return gulp.src('js/**/*.js')
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError())
+});</code></pre>

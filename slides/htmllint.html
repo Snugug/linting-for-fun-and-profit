@@ -1,0 +1,20 @@
+<h3><a href="https://github.com/htmllint/htmllint">htmllint</a> - Grunt</h3>
+
+<pre><code class="language-bash">npm install grunt-htmllint --save-dev</code></pre>
+
+<pre class="fragment"><code class="language-javascript">'use strict';
+
+grunt.initConfig({
+  htmllint: {
+    your_target: {
+      options: {
+        force: false,
+        plugins: ['htmllint-plugin-name'],
+        /* htmllint options go here */
+      },
+      src: [
+        'views/**/*.html'
+      ]
+    }
+  },
+});</code></pre>

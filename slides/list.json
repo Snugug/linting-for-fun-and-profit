@@ -100,5 +100,22 @@
         "attr": {
             "data-state": "your-turn"
         }
-    }
+    },
+    [
+        "cli-sass-lint.html",
+        "grunt-sass-lint.html",
+        "gulp-sass-lint.html"
+    ],
+    {
+        "filename": "exploding-with-power.html",
+        "attr": {
+            "data-state": "rainbows"
+        }
+    },
+    [
+        "lint-all-the-things.html",
+        "eslint.html",
+        "htmllint.html"
+    ]
+
 ]
