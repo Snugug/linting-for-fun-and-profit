@@ -16,26 +16,22 @@
 // ---------------------------------------------
 
 
-// Include theme-specific fonts
-@import url(../bower_components/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
-
-
 // Override theme settings (see ../../bower_components/reveal.js/css/theme/template/settings.scss)
 $backgroundColor: #222;
 
-$mainColor: #fff;
-$headingColor: #fff;
+$mainColor: #2c2a21;
+$headingColor: #c20030;
 
 $mainFontSize: 38px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'aller', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+$headingFont: 'aller', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: normal;
 $headingFontWeight: 600;
-$linkColor: #42affa;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: lighten( $linkColor, 25% );
+$linkColor: #c20030;
+$linkColorHover: darken( $linkColor, 15% );
+$selectionBackgroundColor: darken( $linkColor, 25% );
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
@@ -51,3 +47,135 @@ section.has-light-background {
 // Theme template ------------------------------
 @import "../../bower_components/reveal.js/css/theme/template/theme";
 // ---------------------------------------------
+
+// @import "../../bower_components/IBM-Design-Colors/ibm-colors";
+$golden: 1.618;
+
+@import "../../bower_components/blog/sass/global/heading";
+@import "../../bower_components/blog/sass/global/variables";
+@import "../../bower_components/letterform-shades/stylesheets/letterform-shades";
+
+.reveal pre,
+.reveal code {
+    font-family: 'source-code-pro', 'Source Code Pro', 'Lucida Console', 'Lucida Sans Typewriter', 'monaco', 'Bitstream Vera Sans Mono', monospace;
+}
+
+.reveal pre code {
+    max-height: 70vh;
+}
+
+.reveal blockquote {
+    box-shadow: none;
+    background: inherit;
+}
+
+@mixin state-image($state, $image, $contain: false) {
+    .#{$state} & {
+        @if $contain {
+            @extend %background-contain;
+        }
+        @else {
+            @extend %background-cover;
+        }
+
+        background-image: url('../resources/images/#{$image}');
+        @content;
+    }
+
+    @at-root {
+        .#{$state} .reveal section {
+            @extend %transparent-text;
+        }
+    }
+}
+
+%transparent-text > * {
+    color: transparent;
+}
+
+%background-cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+%background-contain {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-color: black;
+}
+
+.slide-background {
+    @include state-image('linting-1', 'lint-1.gif');
+
+    @include state-image('fun-1', 'fun-4.gif');
+
+    @include state-image('profit-1', 'money-8.gif');
+
+    @include state-image('talk', 'talk.gif');
+
+    @include state-image('ast', 'tree-4.gif');
+
+    @include state-image('woah', 'woah.gif');
+
+    @include state-image('eye-opening', 'eye-opening.gif');
+
+    @include state-image('superpowers', 'superpowers.gif');
+
+    @include state-image('veggies', 'veggies.gif', true);
+
+    @include state-image('your-turn', 'integrate.gif');
+
+    .title & {
+        @include awesome-header(#c20030, #da9400, $steps: 10);
+    }
+}
+
+.title .reveal h1 {
+    @include close-shade(mix($background, black, 16%), #111, 'bottom right', 15);
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 0;
+
+    word-wrap: break-word;
+    hyphens: auto;
+    color: $background;
+}
+
+.reveal .half {
+    width: calc(50% - 2rem);
+    float: left;
+
+    &:nth-of-type(odd) {
+        margin-right: 1rem;
+    }
+    &:nth-of-type(even) {
+        margin-left: 1rem;
+    }
+}
+
+pre[data-line][class*=" language-"] {
+    padding: 0;
+    padding-left: 1.5em;
+    background: #3F3F3F;
+
+    code {
+        border-left: 1px solid black;
+    }
+}
+
+.reveal .line-highlight {
+    background: rgba(black, .15);
+    margin-top: -4px;
+
+    &:before,
+    &[data-end]:after {
+        color: inherit;
+        background: none;
+        box-shadow: none;
+    }
+}
