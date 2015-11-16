@@ -1,10 +1,1 @@
-
-# Linting for Fun and Profit
-
-From the terminal, pop in:
-
-  ```yo reveal:slide "Slide Title"```
-
-Available options:
-
- ```--markdown --attributes --notes```
+<h1>Linting for <br>Fun and Profit</h1>
