@@ -131,6 +131,10 @@ $golden: 1.618;
     .title & {
         @include awesome-header(#c20030, #da9400, $steps: 10);
     }
+
+    .end & {
+        @include awesome-header(#121212, #2c2a21, -45deg 30deg, 8);
+    }
 }
 
 .title .reveal h1 {
@@ -146,6 +150,10 @@ $golden: 1.618;
     word-wrap: break-word;
     hyphens: auto;
     color: $background;
+}
+
+.end .reveal {
+    color: #f8f7f2;
 }
 
 .reveal .half {
