@@ -106,6 +106,7 @@
         "grunt-sass-lint.html",
         "gulp-sass-lint.html"
     ],
+    "linting-video.html",
     {
         "filename": "exploding-with-power.html",
         "attr": {
@@ -116,6 +117,11 @@
         "lint-all-the-things.html",
         "eslint.html",
         "htmllint.html"
-    ]
-
+    ],
+    {
+        "filename": "thanks.html",
+        "attr": {
+            "data-state": "end"
+        }
+    }
 ]
