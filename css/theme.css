@@ -275,20 +275,24 @@ body {
   box-shadow: none;
   background: inherit; }
 
-.linting-1 .reveal section > *, .fun-1 .reveal section > *, .profit-1 .reveal section > *, .talk .reveal section > *, .ast .reveal section > *, .woah .reveal section > *, .eye-opening .reveal section > *, .superpowers .reveal section > *, .veggies .reveal section > *, .your-turn .reveal section > *, .rainbows .reveal section > * {
+.linting-1 .reveal section > *, .fun-1 .reveal section > *, .profit-1 .reveal section > *, .talk .reveal section > *, .ast .reveal section > *, .woah .reveal section > *, .eye-opening .reveal section > *, .superpowers .reveal section > *, .veggies .reveal section > *, .your-turn .reveal section > *, .rainbows .reveal section > *, .automation .reveal section > *, .dance .reveal section > * {
   color: transparent; }
 
-.linting-1 .slide-background, .fun-1 .slide-background, .profit-1 .slide-background, .talk .slide-background, .ast .slide-background, .woah .slide-background, .eye-opening .slide-background, .superpowers .slide-background, .your-turn .slide-background, .rainbows .slide-background {
+.linting-1 .slide-background, .fun-1 .slide-background, .profit-1 .slide-background, .talk .slide-background, .ast .slide-background, .woah .slide-background, .eye-opening .slide-background, .superpowers .slide-background, .your-turn .slide-background, .rainbows .slide-background, .automation .slide-background {
   background-size: cover !important;
   background-repeat: no-repeat !important; }
 
-.veggies .slide-background {
+.veggies .slide-background, .dance .slide-background {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center;
   background-color: black; }
 
 .slide-background {
+  @at-root { }
+
+  @at-root { }
+
   @at-root { }
 
   @at-root { }
@@ -333,6 +337,10 @@ body {
     background-image: url('../resources/images/integrate.gif'); }
   .rainbows .slide-background {
     background-image: url('../resources/images/rainbows.gif'); }
+  .automation .slide-background {
+    background-image: url('../resources/images/automation.gif'); }
+  .dance .slide-background {
+    background-image: url('../resources/images/dance.gif'); }
   .title .slide-background {
     background-color: #c20030;
     background: linear-gradient(0deg, rgba(194, 0, 48, 0) 10%, rgba(194, 0, 48, 0.05) 10%, rgba(194, 0, 48, 0.05) 20%, rgba(194, 0, 48, 0.1) 20%, rgba(194, 0, 48, 0.1) 30%, rgba(194, 0, 48, 0.15) 30%, rgba(194, 0, 48, 0.15) 40%, rgba(194, 0, 48, 0.2) 40%, rgba(194, 0, 48, 0.2) 50%, rgba(194, 0, 48, 0.3) 50%, rgba(194, 0, 48, 0.3) 60%, rgba(194, 0, 48, 0.4) 60%, rgba(194, 0, 48, 0.4) 70%, rgba(194, 0, 48, 0.5) 70%, rgba(194, 0, 48, 0.5) 80%, rgba(194, 0, 48, 0.6) 80%, rgba(194, 0, 48, 0.6) 90%, rgba(194, 0, 48, 0.8) 90%), linear-gradient(-90deg, rgba(194, 0, 48, 0) 10%, rgba(194, 0, 48, 0.05) 10%, rgba(194, 0, 48, 0.05) 20%, rgba(194, 0, 48, 0.1) 20%, rgba(194, 0, 48, 0.1) 30%, rgba(194, 0, 48, 0.15) 30%, rgba(194, 0, 48, 0.15) 40%, rgba(194, 0, 48, 0.2) 40%, rgba(194, 0, 48, 0.2) 50%, rgba(194, 0, 48, 0.3) 50%, rgba(194, 0, 48, 0.3) 60%, rgba(194, 0, 48, 0.4) 60%, rgba(194, 0, 48, 0.4) 70%, rgba(194, 0, 48, 0.5) 70%, rgba(194, 0, 48, 0.5) 80%, rgba(194, 0, 48, 0.6) 80%, rgba(194, 0, 48, 0.6) 90%, rgba(194, 0, 48, 0.8) 90%), #da9400; }
@@ -378,3 +386,25 @@ pre[data-line][class*=" language-"] {
     color: inherit;
     background: none;
     box-shadow: none; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  background-image: linear-gradient(to top, #f8f7f2 75%, #c20030 75%);
+  background-repeat: repeat-x;
+  background-size: 0.125em 0.1875em;
+  background-position: 0 1.075em;
+  text-shadow: 0.0625em 0.0625em 0 #f8f7f2, -0.0625em 0 0 #f8f7f2; }
+
+.reveal .resources {
+  text-align: left;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  list-style-type: none;
+  margin-top: 2rem; }
+  .reveal .resources a {
+    color: #f8f7f2;
+    background-image: linear-gradient(to top, #121212 75%, #c20030 75%);
+    background-repeat: repeat-x;
+    background-size: 0.125em 0.1875em;
+    background-position: 0 1.075em;
+    text-shadow: 0.0625em 0.0625em 0 #121212, -0.0625em 0 0 #121212; }

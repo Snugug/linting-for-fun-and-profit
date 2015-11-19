@@ -119,6 +119,28 @@
         "htmllint.html"
     ],
     {
+        "filename": "automation.html",
+        "attr": {
+            "data-state": "automation"
+        }
+    },
+    [
+        "automating-linting.html",
+        "automation-with-gulp.html"
+    ],
+    [
+        "protected.html",
+        "pb-setup.html",
+        "pb-settings.html",
+        "pb-failed.html"
+    ],
+    {
+        "filename": "dance.html",
+        "attr": {
+            "data-state": "dance"
+        }
+    },
+    {
         "filename": "thanks.html",
         "attr": {
             "data-state": "end"

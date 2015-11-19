@@ -51,6 +51,7 @@ section.has-light-background {
 // @import "../../bower_components/IBM-Design-Colors/ibm-colors";
 $golden: 1.618;
 
+@import "../../bower_components/sass-toolkit/stylesheets/toolkit/underline";
 @import "../../bower_components/blog/sass/global/heading";
 @import "../../bower_components/blog/sass/global/variables";
 @import "../../bower_components/letterform-shades/stylesheets/letterform-shades";
@@ -128,6 +129,10 @@ $golden: 1.618;
 
     @include state-image('rainbows', 'rainbows.gif');
 
+    @include state-image('automation', 'automation.gif');
+
+    @include state-image('dance', 'dance.gif', true);
+
     .title & {
         @include awesome-header(#c20030, #da9400, $steps: 10);
     }
@@ -187,5 +192,35 @@ pre[data-line][class*=" language-"] {
         color: inherit;
         background: none;
         box-shadow: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    a {
+        background-image: linear-gradient(to top,#f8f7f2 75%,#c20030 75%);
+        background-repeat: repeat-x;
+        background-size: .125em .1875em;
+        background-position: 0 1.075em;
+        text-shadow: .0625em .0625em 0 #f8f7f2,-.0625em 0 0 #f8f7f2;
+    }
+}
+
+.reveal .resources {
+    text-align: left;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    list-style-type: none;
+
+    margin-top: 2rem;
+
+    a {
+        color: #f8f7f2;
+        background-image: linear-gradient(to top,#121212 75%,#c20030 75%);
+        background-repeat: repeat-x;
+        background-size: .125em .1875em;
+        background-position: 0 1.075em;
+        text-shadow: .0625em .0625em 0 #121212,-.0625em 0 0 #121212;
     }
 }
