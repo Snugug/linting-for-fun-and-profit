@@ -275,10 +275,10 @@ body {
   box-shadow: none;
   background: inherit; }
 
-.linting-1 .reveal section > *, .fun-1 .reveal section > *, .profit-1 .reveal section > *, .talk .reveal section > *, .ast .reveal section > *, .woah .reveal section > *, .eye-opening .reveal section > *, .superpowers .reveal section > *, .veggies .reveal section > *, .your-turn .reveal section > *, .rainbows .reveal section > *, .automation .reveal section > *, .dance .reveal section > * {
+.linting-1 .reveal section > *, .fun-1 .reveal section > *, .profit-1 .reveal section > *, .linting-2 .reveal section > *, .fun-2 .reveal section > *, .profit-2 .reveal section > *, .talk .reveal section > *, .ast .reveal section > *, .woah .reveal section > *, .eye-opening .reveal section > *, .superpowers .reveal section > *, .veggies .reveal section > *, .your-turn .reveal section > *, .rainbows .reveal section > *, .automation .reveal section > *, .dance .reveal section > * {
   color: transparent; }
 
-.linting-1 .slide-background, .fun-1 .slide-background, .profit-1 .slide-background, .talk .slide-background, .ast .slide-background, .woah .slide-background, .eye-opening .slide-background, .superpowers .slide-background, .your-turn .slide-background, .rainbows .slide-background, .automation .slide-background {
+.linting-1 .slide-background, .fun-1 .slide-background, .profit-1 .slide-background, .linting-2 .slide-background, .fun-2 .slide-background, .profit-2 .slide-background, .talk .slide-background, .ast .slide-background, .woah .slide-background, .eye-opening .slide-background, .superpowers .slide-background, .your-turn .slide-background, .rainbows .slide-background, .automation .slide-background {
   background-size: cover !important;
   background-repeat: no-repeat !important; }
 
@@ -314,6 +314,12 @@ body {
   @at-root { }
 
   @at-root { }
+
+  @at-root { }
+
+  @at-root { }
+
+  @at-root { }
  }
   .linting-1 .slide-background {
     background-image: url('../resources/images/lint-1.gif'); }
@@ -321,6 +327,12 @@ body {
     background-image: url('../resources/images/fun-4.gif'); }
   .profit-1 .slide-background {
     background-image: url('../resources/images/money-8.gif'); }
+  .linting-2 .slide-background {
+    background-image: url('../resources/images/lint-2.gif'); }
+  .fun-2 .slide-background {
+    background-image: url('../resources/images/fun-2.gif'); }
+  .profit-2 .slide-background {
+    background-image: url('../resources/images/money-2.gif'); }
   .talk .slide-background {
     background-image: url('../resources/images/talk.gif'); }
   .ast .slide-background {
