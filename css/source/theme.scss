@@ -113,6 +113,12 @@ $golden: 1.618;
 
     @include state-image('profit-1', 'money-8.gif');
 
+    @include state-image('linting-2', 'lint-2.gif');
+
+    @include state-image('fun-2', 'fun-2.gif');
+
+    @include state-image('profit-2', 'money-2.gif');
+
     @include state-image('talk', 'talk.gif');
 
     @include state-image('ast', 'tree-4.gif');

@@ -140,6 +140,32 @@
             "data-state": "dance"
         }
     },
+    [
+        {
+            "filename": "tripple-1/linting.html",
+            "attr": {
+                "data-state": "linting-2",
+                "data-transition-speed": "fast",
+                "data-transition": "slide"
+            }
+        },
+        {
+            "filename": "tripple-1/fun.html",
+            "attr": {
+                "data-state": "fun-2",
+                "data-transition-speed": "fast",
+                "data-transition": "slide"
+            }
+        },
+        {
+            "filename": "tripple-1/profit.html",
+            "attr": {
+                "data-state": "profit-2",
+                "data-transition-speed": "fast",
+                "data-transition": "slide"
+            }
+        }
+    ],
     {
         "filename": "thanks.html",
         "attr": {
