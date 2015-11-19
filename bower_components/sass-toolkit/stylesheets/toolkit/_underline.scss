@@ -10,14 +10,8 @@
 
   @include underline-core($extend);
 
-  @if mixin-exists(background-image) and function-exists(linear-gradient) {
-    @include background-image(
-      linear-gradient(bottom, $background 75%, $color 75%)
-    );
-  }
-  @else {
-    background-image: linear-gradient(to top, $background 75%, $color 75%);
-  }
+
+background-image: linear-gradient(to top, $background 75%, $color 75%);
   background-size: (2 * $PX) ((1 + $width) * $PX);
   background-position: 0 (($width) * $PX) + $distance;
 
